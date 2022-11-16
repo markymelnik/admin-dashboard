@@ -1,7 +1,17 @@
+@font-face {
+    font-family: openSans;
+    src: url(fonts/OpenSans.ttf);
+}
+
+@font-face {
+    font-family: openSansBold;
+    src: url(fonts/OpenSansBold.ttf);
+}
+
 * {
-    border: 1px dotted red;
     padding: 0;
     margin: 0;
+    font-family: openSans;
 }
 
 .dashboard {
@@ -13,6 +23,7 @@
 .sidebar {
     position: relative;
     height: 100%;
+    background-color: lightseagreen;
 }
 
 .sidebar-header {
@@ -22,25 +33,31 @@
 .sidebar-header > h1 {
     text-align: center;
     padding: 20px 0;
+    color: white;
+    font-family: OpenSansBold;
 }
 
 .sidebar-content-1, .sidebar-content-2 {
     display: grid;
     justify-content: center;
     grid-template-columns: 150px;
-    margin-top: 50px;
+    margin-top: 40px;
     gap: 20px;
 }
 
 .sidebar-content-1 > div, .sidebar-content-2 > div {
-    text-align: center;
+    text-align: left;
     font-size: 22px;
+    font-family: OpenSansBold;
+    color: white;
+
+
 }
 
-.main-container {
+.body-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 18% 82%;
 }
 
 .header {
@@ -52,31 +69,73 @@
 .search {
     display: grid;
     grid-template-columns: 50px 500px;
-    grid-template-rows: 50px;
+    grid-template-rows: 1fr;
+}
+
+.searchbar {
+    margin: 10px;
+}
+
+.searchbar > input {
+    border: none;
+    border-radius: 12px;
+    background-color: #d2e6ff;
+    width: 500px;
+    height: 30px;
 }
 
 .top-info {
     display: grid;
-    grid-template-columns: repeat(2, 50px) 100px;
-    grid-template-rows: 50px;
+    grid-template-columns: repeat(2, 50px) 1fr;
+    grid-template-rows: 1fr;
+}
+
+.top-info > .my-name {
+    margin: 10px;
+    font-family: openSansBold;
 }
 
 .header-text {
     display: grid;
-    grid-template-columns: 50px 5fr;
-    grid-template-rows: 50px;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 80px;
+}
+
+.welcome-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25px 1fr;
+}
+
+.hello-text {
+    font-size: 16px;
+}
+
+.my-name {
+    font-size: 24px;
 }
 
 .top-btns {
     display: grid;
-    grid-template-columns: repeat(3, 50px);
-    grid-template-rows: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.top-btns > button {
+    color: white;
+    background-color: lightseagreen;
+    font-family: OpenSansBold;
+    border: none;
+    border-radius: 14px;
+    padding: 8px;
 }
 
 .main-content {
     display: grid;
     grid-template-columns: 4fr 2fr;
     grid-template-rows: 100%;
+    background: #d2e6ff;
 }
 
 .left-content {
@@ -91,6 +150,12 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
+    padding-right: 0;
+}
+
+.projects-list > div {
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 
 .right-content {
@@ -119,10 +184,22 @@
     padding: 20px;
 }
 
+.announcements-section > div {
+    background-color: #ffffff;
+}
+
 .trending-section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
+}
+
+.trending-section > div {
+    background-color: #ffffff;
+}
+
+h2 {
+    padding: 10px;
 }
