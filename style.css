@@ -12,7 +12,7 @@
 
 .sidebar {
     position: relative;
-    height: 100vh;
+    height: 100%;
 }
 
 .sidebar-header {
@@ -71,4 +71,58 @@
     display: grid;
     grid-template-columns: repeat(3, 50px);
     grid-template-rows: 50px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 100%;
+}
+
+.left-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.right-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+}
+
+.right-content-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+}
+
+.right-content-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+}
+
+.announcements-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.trending-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
