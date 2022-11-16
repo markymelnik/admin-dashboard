@@ -6,13 +6,42 @@
 
 .dashboard {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 275px 1fr;
     grid-template-rows: 100vh; 
 }
 
 .sidebar {
+    position: relative;
     height: 100vh;
 }
+
+.sidebar-header {
+    width: 100%;
+}
+
+.sidebar-header > h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sidebar-content-1, .sidebar-content-2 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 150px;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.sidebar-content-1 > div, .sidebar-content-2 > div {
+    text-align: center;
+    font-size: 22px;
+}
+
+
+
+
+
+
 
 .main-container {
     display: grid;
