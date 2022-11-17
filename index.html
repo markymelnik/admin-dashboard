@@ -1,101 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="dashboard">
+  <div class="dashboard">
     <div class="sidebar">
-        <div class="sidebar-header">
-            <h1>Dashboard</h1>
-        </div>
-        <div class="sidebar-content-1">
-            <div>Home</div>
-            <div>Profile</div>
-            <div>Messages</div>
-            <div>History</div>
-            <div>Tasks</div>
-            <div>Communities</div>
-        </div>
-        <div class="sidebar-content-2">
-            <div>Settings</div>
-            <div>Support</div>
-            <div>Privacy</div>
-        </div>
-
+      <div class="sidebar-header">
+        <h1>Dashboard</h1>
+      </div>
+      <div class="sidebar-content-1">
+        <div>Home</div>
+        <div>Profile</div>
+        <div>Messages</div>
+        <div>History</div>
+        <div>Tasks</div>
+        <div>Communities</div>
+      </div>
+      <div class="sidebar-content-2">
+        <div>Settings</div>
+        <div>Support</div>
+        <div>Privacy</div>
+      </div>
     </div>
     <div class="body-container">
-        <div class="header">
-            <div class="search">
-                <div class="icon">
-                    <img src="svgs/magnify.svg" alt="magnify">
-                </div>
-                <div class="searchbar">
-                    <input type="text" id="searchbar" name="searchbar">
-                </div>
-            </div>
-            <div class="top-info">
-                <div class="alert-symbol">
-                    <img src="svgs/bell-plus-outline.svg" alt="bell-plus-icon">
-                </div>
-                <div class="profile-logo">
-                    <img src="svgs/account-circle-outline.svg" alt="acccount-circle-outline">
-                </div>
-                <div class="my-name">Mark Melnik</div>
-            </div>
-            <div class="header-text">
-                <div class="profile-logo">
-                    <img src="svgs/account-circle-outline.svg" alt="acccount-circle-outline">
-                </div>
-                <div class="welcome-text">
-                    <div class="hello-text">Hey there,</div>
-                    <div class="my-name">Mark Melnik</div>
-                </div>
-            </div>
-            <div class="top-btns">
-                <button class="btn1">New</button>
-                <button class="btn2">Upload</button>
-                <button class="btn3">Share</button>
-            </div>
+      <div class="header">
+        <div class="search">
+          <div class="icon">
+            <img src="svgs/magnify.svg" class="img-magnify" alt="magnify">
+          </div>
+          <div class="searchbar">
+            <input type="text" id="searchbar" name="searchbar">
+          </div>
         </div>
-        <div class="main-content">
-            <div class="left-content">
-                <h2>Your Stuff</h2>
-                    <div class="projects-list">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                </div>
-            </div>
-            <div class="right-content">
-                <div class="right-content-top">
-                <h2>Announcements</h2>
-                <div class="announcements-section">
-                    <div class="ann1">1</div>
-                    <div class="ann2">2</div>
-                    <div class="ann3">3</div>
-                </div>
-                </div>
-                <div class="right-content-bottom">
-                <h2>Trending</h2>
-                <div class="trending-section">
-                    <div class="trend1">1</div>
-                    <div class="trend2">2</div>
-                    <div class="trend3">3</div>
-                    <div class="trend4">4</div>
-                </div>
-                </div>
-            </div>
+        <div class="top-info">
+          <div class="symbol-bell">
+            <img src="svgs/bell.svg" class="img-bell" alt="bell">
+          </div>
+          <div class="symbol-person">
+            <img src="svgs/person.svg" class="img-person-1" alt="person">
+          </div>
+          <div class="top-name">
+            <div class="my-name">Mark Melnik</div>
+          </div>
         </div>
+        <div class="header-text">
+          <div class="profile-logo">
+            <img src="svgs/person.svg" class="img-person-2" alt="person">
+          </div>
+          <div class="welcome-text">
+            <div class="hello-text">Hey there,</div>
+            <div class="my-name">Mark Melnik</div>
+          </div>
+        </div>
+        <div class="top-btns">
+          <button class="btn1">New</button>
+          <button class="btn2">Upload</button>
+          <button class="btn3">Share</button>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="left-content">
+          <h2>Your Stuff</h2>
+          <div class="projects-list">
+            <div class="project"><div>One</div></div>
+            <div class="project"><div>Two</div></div>
+            <div class="project"><div>Three</div></div>
+            <div class="project"><div>Four</div></div>
+            <div class="project"><div>Five</div></div>
+            <div class="project"><div>Six</div></div>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="right-content-top">
+            <h2>Announcements</h2>
+            <div class="announcements-section">
+              <div class="announcements-container">
+                <div class="ann1">1</div>
+                <div class="ann2">2</div>
+                <div class="ann3">3</div>
+              </div>
+            </div>
+          </div>
+          <div class="right-content-bottom">
+            <h2>Trending</h2>
+            <div class="trending-section">
+              <div class="trending-container">
+                <div class="trend1">1</div>
+                <div class="trend2">2</div>
+                <div class="trend3">3</div>
+                <div class="trend4">4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-    
+  </div>
 </body>
 </html>
